@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recetas saludables - Nueva</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css">
+</head>
+
+<body>
+	<!-- Encabezado principal -->
+	<header>
+		<a href="index.html"><img class="logo" src="images/logo.png" alt="Logo de una receta de cocina"></a>
+		<div class="logo-text">
+			<h1>Recetas saludables</h1>
+			<h2>Recetas de cocina para una vida sana</h2>
+		</div>
+	</header>
+	<!-- Menú de navegación -->
+	<nav>
+		<input type="checkbox" id="chkMenu">
+		<label for="chkMenu">&equiv;</label>
+		<ul>
+			<li><a class="nav-link" href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+			<li><a class="nav-link" href="buscar.html"><span class="icon-search"></span><span>Buscar</span></a></li>
+			<li><a class="nav-link" href="nueva.html"><span class="icon-upload-1"></span><span>Nueva</span></a></li>
+			<li><a class="nav-link" href="login.html"><span class="icon-login"></span><span>Login</span></a></li>
+			<li><a class="nav-link" href="registro.html"><span class="icon-user-plus"></span><span>Registro</span></a></li>
+			<li><a class="nav-link" href="index.html"><span class="icon-logout"></span><span>Logout</span></a></li>
+		</ul>
+	</nav>
+
+	<main class="nueva">
+		<h3>Añade una nueva receta</h3>
+		<form class="form-nueva">
+			<div class="form-flex">
+				<!-- Añadir información receta -->
+				<fieldset>
+					<legend>Añadir información de receta</legend>
+					<div class="form-input">
+						<label for="nombre">Nombre de la receta:</label>
+						<input type="text" name="nombre-receta" id="nombre" placeholder="macarrones con tomate" maxlength="100" required>
+					</div>
+					<div class="form-input form-wrap">
+						<label for="tiempo">Tiempo de elaboración:</label>
+						<input type="number" name="tiempo" id="tiempo" placeholder="90" min="1" required>
+						<span>minutos</span>
+					</div>
+					<div class="form-input form-wrap">
+						<label for="personas">Para cuantas personas:</label>
+						<input type="number" name="personas" id="personas" placeholder="1-10" min="1" max="10" required>
+					</div>
+					<div class="form-input">
+						<label for="select">Dificultad:</label>
+						<select name="dificultad-nueva" id="select">
+							<option value="">--Selecciona una dificultad--</option>
+							<option value="0">Baja</option>
+							<option value="1">Media</option>
+							<option value="2">Alta</option>
+						</select>
+					</div>
+					<div class="form-input">
+						<label for="ingredientes">Ingredientes:</label>
+						<input type="text" name="ingrediente" id="ingredientes" placeholder="macarrones, tomate, ..."
+							autocomplete="off">
+						<button class="btn-plus" type="button">Añadir ingrediente</button>
+						<ul>
+							<li>500 gramos de macarrones <span class="icon-cancel"></span></li>
+							<li>1 kg de tomate <span class="icon-cancel"></span></li>
+						</ul>
+					</div>
+					<div class="form-input">
+						<label for="etiqueta">Etiquetas:</label>
+						<input type="text" name="etiquetas" id="etiqueta" placeholder="plato principal, pasta, ..." list="lista"
+							autocomplete="off">
+						<datalist id="lista">
+							<option value="Pasta"></option>
+							<option value="Plato principal"></option>
+						</datalist>
+						<button type="button" class="btn-plus">Añadir etiqueta</button>
+						<ul>
+							<li>Pasta <span class="icon-cancel"></span></li>
+							<li>Plato principal <span class="icon-cancel"></span></li>
+						</ul>
+					</div>
+					<div class="form-input">
+						<label for="text-area">Proceso de elaboración:</label>
+						<textarea name="textarea" id="text-area" placeholder="Escribe la elaboración aquí..." required></textarea>
+					</div>
+				</fieldset>
+				<!-- Añadir fotos -->
+				<fieldset>
+					<legend>Añadir Fotos</legend>
+					<div class="form-div-fotos">
+						<div class="form-input">
+							<label for="file-upload">
+								<span>
+									<span class="icon-upload-1"></span>
+									<span class="icon-cancel"></span>
+								</span>
+								<img src="images/Upload-photo-image.png" alt="subir imagen de receta">
+								<input type="file" id="file-upload" name="image-upload" accept="image/*">
+							</label>
+							<textarea name="textarea" maxlength="200" placeholder="Escribe tu texto aquí..." required></textarea>
+						</div>
+						<div class="form-input">
+							<label for="file-upload-2">
+								<span>
+									<span class="icon-upload-1"></span>
+									<span class="icon-cancel"></span>
+								</span>
+								<img src="images/Upload-photo-image.png" alt="">
+								<input type="file" id="file-upload-2" name="image-upload" accept="image/*">
+							</label>
+							<textarea name="textarea" maxlength="200" placeholder="Escribe tu texto aquí..." required></textarea>
+						</div>
+					</div>
+					<button type="button" class="btn-plus">Añadir foto</button>
+				</fieldset>
+			</div>
+			<footer class="form-btn">
+				<input type="reset" value="Limpiar" class="btn">
+				<input type="submit" value="Crear receta" class="btn">
+			</footer>
+		</form>
+	</main>
+
+	<!-- Pie de página -->
+	<footer class="footer-container">
+		<p>&copy; 2024 <a href="acerca.html">KDAO</a>. Ingeniería Multimedia.</p>
+		<p>Práctica 1, PCW</p>
+	</footer>
+</body>
+
+</html>

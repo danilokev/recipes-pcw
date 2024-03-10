@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recetas saludables - Acerca</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+	<!-- Encabezado principal -->
+	<header>
+		<a href="index.html"><img class="logo" src="images/logo.png" alt="Logo de una receta de cocina"></a>
+		<div class="logo-text">
+			<h1>Recetas saludables</h1>
+			<h2>Recetas de cocina para una vida sana</h2>
+		</div>
+	</header>
+	<!-- Menú de navegación -->
+	<nav>
+		<input type="checkbox" id="chkMenu">
+		<label for="chkMenu">&equiv;</label>
+		<ul>
+			<li><a class="nav-link" href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+			<li><a class="nav-link" href="buscar.html"><span class="icon-search"></span><span>Buscar</span></a></li>
+			<li><a class="nav-link" href="nueva.html"><span class="icon-upload-1"></span><span>Nueva</span></a></li>
+			<li><a class="nav-link" href="login.html"><span class="icon-login"></span><span>Login</span></a></li>
+			<li><a class="nav-link" href="registro.html"><span class="icon-user-plus"></span><span>Registro</span></a></li>
+			<li><a class="nav-link" href="index.html"><span class="icon-logout"></span><span>Logout</span></a></li>
+		</ul>
+	</nav>
+
+	<main class="acerca">
+		<div class="info-acerca-container">
+			<section>
+				<h3>Información sobre la práctica</h3>
+				<div>
+					<label>Asignatura</label>
+					<p>Programación del cliente web (PCW)</p>
+				</div>
+				<div>
+					<label>Titulación</label>
+					<p>Grado en ingeniería multimedia</p>
+				</div>
+				<div>
+					<label>Año académico</label>
+					<p>2023/2024</p>
+				</div>
+				<div>
+					<label>Práctica 1</label>
+					<p>HTML y CSS</p>
+				</div>
+			</section>
+			<section>
+				<h3>Información sobre el autor</h3>
+				<div>
+					<label>Nombre</label>
+					<p>Kevin Danilo</p>
+				</div>
+				<div>
+					<label>DNI</label>
+					<p>xxxxxxxx</p>
+				</div>
+				<div>
+					<label>Email</label>
+					<p>miusuario@alu.ua.es</p>
+				</div>
+				<div>
+					<label>Grupo de pŕacticas</label>
+					<p>Grupo 4 - Jueves, 19:00 a 21:00</p>
+				</div>
+			</section>
+		</div>
+
+		<section class="section-doc">
+			<h3>Documentación de la práctica</h3>
+			<p>Durante el desarrollo de la página web, en los ordenadores del laboratorio, al principio tuve dificultades para que mi código CSS se mostrara de la forma que yo quería. Para resolver este problema, simplemente fue necesario actualizar las versiones tanto de los navegadores como del entorno de desarrollo Visual Studio Code para que aceptaran esta nueva forma de escribir CSS (CSS nesting).</p>
+			<p>Por otro lado, otra dificultad con la que me encontré fue al posicionar cada sección de la página web en la posición correcta. Por ejemplo, en la página nueva.html, resultó ser de cierta dificultad posicionar la sección de añadir información de la receta nueva y la sección para añadir fotos una al lado de la otra con una separación. Esta dificultad se resolvió al entender dónde colocar un contenedor y usar flex.</p>
+			<p>Además, otro inconveniente que he tenido es en la página receta.html, donde en una pantalla muy pequeña se produce un overflow en las secciones de fotos, etiquetas, ingredientes… Una posible solución es ocultarlo con overflow:hidden; pero me he dado cuenta de que no se puede deslizar para ver todo el contenido; por ahora no he resuelto este inconveniente, pero en general, en pantallas de móvil normales se ve perfectamente. Otro fallo en la página nueva.html es que los textarea se pueden expandir sin ningún límite; habría que limitar su redimensión al contenedor padre.</p>
+			<p>Por último, haciendo una autoevaluación del desarrollo de la práctica, ha sido buena en general; analizando las implementaciones dadas en la práctica y suponiendo que no he pasado nada por alto, se ha completado el 100% de las necesidades a resolver. Me pondría una nota superior o igual a 9.</p>
+		</section>
+	</main>
+	<!-- Pie de página -->
+	<footer class="footer-container">
+		<p>&copy; 2024 <a href="acerca.html">KDAO</a>. Ingeniería Multimedia.</p>
+		<p>Práctica 1, PCW</p>
+	</footer>
+</body>
+</html>

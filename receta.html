@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas saludables - Recetas</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+  <!-- Encabezado principal -->
+	<header>
+		<a href="index.html"><img class="logo" src="images/logo.png" alt="Logo de una receta de cocina"></a>
+		<div class="logo-text">
+			<h1>Recetas saludables</h1>
+			<h2>Recetas de cocina para una vida sana</h2>
+		</div>
+	</header>
+	<!-- Menú de navegación -->
+	<nav>
+		<input type="checkbox" id="chkMenu">
+		<label for="chkMenu">&equiv;</label>
+		<ul>
+			<li><a class="nav-link" href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+			<li><a class="nav-link" href="buscar.html"><span class="icon-search"></span><span>Buscar</span></a></li>
+			<li><a class="nav-link" href="nueva.html"><span class="icon-upload-1"></span><span>Nueva</span></a></li>
+			<li><a class="nav-link" href="login.html"><span class="icon-login"></span><span>Login</span></a></li>
+			<li><a class="nav-link" href="registro.html"><span class="icon-user-plus"></span><span>Registro</span></a></li>
+			<li><a class="nav-link" href="index.html"><span class="icon-logout"></span><span>Logout</span></a></li>
+	 	</ul>	 
+	</nav>
+  
+	<article class="receta">
+		<header>
+			<h3>Macarrones con tomate</h3>
+			<div>
+				<p>Por <a href="buscar.html">usuario</a></p>
+				<p>Publicado el <time datetime="2024-01-26">26 de enero de 2024</time></p>
+			</div>
+		</header>
+		<div>
+			<p><span class="icon-users"></span>4 personas</p>
+      <p>Dificultad media</p>
+      <p><span class="icon-clock"></span>45 min</p>
+		</div>
+		<div class="receta-wrap">
+			<section>
+				<h4>Fotos</h4>
+				<img src="images/receta-1.jpg" alt="Plato de macarrones con tomate">
+				<div>
+					<button type="button" class="btn-plus">Anterior</button>
+					<span>Foto: 1/3</span>
+					<button type="button" class="btn-plus">Siguiente</button>
+				</div>
+			</section>
+			<section class="receta-etiquetas">
+				<h4>Etiquetas</h4>
+				<ul>
+					<li><a href="buscar.html">RecetaDePasta</a></li>
+					<li><a href="buscar.html">MacarronesConTomate</a></li>
+					<li><a href="buscar.html">CocinaItaliana</a></li>
+					<li><a href="buscar.html">RecetaFácil</a></li>
+					<li><a href="buscar.html">SalsaDeTomate</a></li>
+					<li><a href="buscar.html">AlmuerzoRápido</a></li>
+				</ul>
+			</section>
+			<section class="receta-ingre">
+				<h4>Ingredientes</h4>
+				<ul>
+					<li>350 gramos de macarrones</li>
+					<li>1 lata de tomate triturado (400 gramos)</li>
+					<li>1 cebolla</li>
+					<li>2 dientes de ajo</li>
+					<li>Aceite de oliva</li>
+					<li>Sal al gusto</li>
+					<li>Pimienta negra molida</li>
+					<li>Orégano seco</li>
+				</ul>
+			</section>
+			<section class="receta-elaboracion">
+				<h4>Elaboración</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores impedit repellat accusantium architecto dicta iste tempora blanditiis sunt non id labore, reiciendis nihil quia, quidem saepe hic reprehenderit! Incidunt.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores impedit repellat accusantium architecto dicta iste tempora blanditiis sunt non id labore, reiciendis nihil quia, quidem saepe hic reprehenderit! Incidunt.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores impedit repellat accusantium architecto dicta iste tempora blanditiis sunt non id labore, reiciendis nihil quia, quidem saepe hic reprehenderit! Incidunt.</p>
+			</section>
+			<section>
+				<h4>Comentarios</h4>
+				<div id="comentarios">
+					<div class="comentario">
+						<p><strong>Título del comentario 1</strong></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam, veritatis esse ipsum accusamus aliquam repellendus alias quas odit? At quisquam rem ut!</p>
+						<footer class="coment-footer">
+							<p class="fecha"><time datetime="2024-01-26T11:36">26/enero/2024, 11:36h</time></p>
+							<p>Por <strong>usuario1</strong></p>
+						</footer>
+					</div>
+					<div class="comentario">
+						<p><strong>Título del comentario 2</strong></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptates nulla quo unde non. Ipsam, sequi.</p>
+						<footer class="coment-footer">
+							<p class="fecha"><time datetime="2024-01-26T11:36">26/enero/2024, 11:36h</time></p>
+							<p>Por <strong>usuario2</strong></p>
+						</footer>
+					</div>
+				</div>
+				<div id="comentario-login">
+					<p>Para poder dejar un comentario tienes que hacer <a href="login.html">login</a>.</p>
+					<form>
+						<h5>Deja tu comentario</h5>
+						<div class="form-input">
+							<label for="titulo">Título:</label>
+							<input type="text" id="titulo" name="titulo" maxlength="100" required>
+						</div>
+						<div class="form-input">
+							<label for="texto">Texto:</label>
+							<textarea name="texto" id="texto" maxlength="300" required></textarea>
+						</div>
+						<div class="form-btn">
+							<input type="reset" value="Limpiar" class="btn">
+							<input type="submit" value="Comentar" class="btn">
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+	</article>
+
+	<!-- Pie de página -->
+	<footer class="footer-container">
+		<p>&copy; 2024 <a href="acerca.html">KDAO</a>. Ingeniería Multimedia.</p>
+		<p>Práctica 1, PCW</p>
+	</footer>
+</body>
+</html>
